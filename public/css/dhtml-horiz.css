@@ -1,0 +1,158 @@
+/* Root = Horizontal, Secondary = Vertical */
+ul#navmenu {
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+    width: 960px; /*For KHTML*/
+    list-style: none;
+    z-index: 100;
+    height: 43px;
+}
+
+ul#navmenu li {
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+    float: right; /*For Gecko*/
+    display: inline;
+    list-style: none;
+    position: relative;
+    height: auto;
+}
+
+ul#navmenu ul {
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+    width: 230px;
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 43px;
+    right: 0;
+    z-index: 1000;
+}
+
+ul#navmenu ul:after /*From IE 7 lack of compliance*/ {
+    clear: both;
+    display: block;
+    font: 1px/0px serif;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+}
+
+ul#navmenu ul li {
+    width: 230px;
+    float: right; /*For IE 7 lack of compliance*/
+    display: block !important;
+    display: inline; /*For IE*/
+}
+
+/* Root Menu */
+ul#navmenu a {
+    padding: 14px 15px 14px 15px;
+    background: url(../images_ar/border.jpg) left top repeat-y;
+    float: none !important; /*For Opera*/
+    float: right; /*For IE*/
+    display: block;
+    color: #000;
+    font: bold 13px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    height: auto !important;
+    height: 1%; /*For IE*/
+}
+
+ul#navmenu .noneborder a {
+    background: none;
+}
+
+/* Root Menu Hover Persistence */
+ul#navmenu a:hover,
+ul#navmenu li:hover a,
+ul#navmenu li.iehover a {
+    color: #3b5900;
+}
+
+/* 2nd Menu */
+ul#navmenu li:hover li a,
+ul#navmenu li.iehover li a {
+    float: none;
+    padding: 9px 10px;
+    background: #fff6cf;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    border-left: 0px solid #e3ddd6;
+    border-bottom: 1px solid #d8d0b0;
+    color: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/* 2nd Menu Hover Persistence */
+ul#navmenu li:hover li a:hover,
+ul#navmenu li:hover li:hover a,
+ul#navmenu li.iehover li a:hover,
+ul#navmenu li.iehover li.iehover a {
+    background: #007442;
+    color: #fff;
+    border-left: 0px solid #d6d6d6;
+}
+
+/* 3rd Menu */
+ul#navmenu li:hover li:hover li a,
+ul#navmenu li.iehover li.iehover li a {
+    background: #02b74a;
+    color: #fff;
+}
+
+/* 3rd Menu Hover Persistence */
+ul#navmenu li:hover li:hover li a:hover,
+ul#navmenu li:hover li:hover li:hover a,
+ul#navmenu li.iehover li.iehover li a:hover,
+ul#navmenu li.iehover li.iehover li.iehover a {
+    background: #b58a36;
+    color: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/* 4th Menu */
+ul#navmenu li:hover li:hover li:hover li a,
+ul#navmenu li.iehover li.iehover li.iehover li a {
+    background: #eee;
+    color: #666;
+}
+
+/* 4th Menu Hover */
+ul#navmenu li:hover li:hover li:hover li a:hover,
+ul#navmenu li.iehover li.iehover li.iehover li a:hover {
+    background: #ccc;
+    color: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+ul#navmenu ul ul,
+ul#navmenu ul ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 230px;
+}
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+ul#navmenu li:hover ul ul,
+ul#navmenu li:hover ul ul ul,
+ul#navmenu li.iehover ul ul,
+ul#navmenu li.iehover ul ul ul {
+    display: none;
+}
+
+ul#navmenu li:hover ul,
+ul#navmenu ul li:hover ul,
+ul#navmenu ul ul li:hover ul,
+ul#navmenu li.iehover ul,
+ul#navmenu ul li.iehover ul,
+ul#navmenu ul ul li.iehover ul {
+    display: block;
+}

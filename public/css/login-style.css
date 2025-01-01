@@ -1,0 +1,198 @@
+html {
+    overflow-x: auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    font: normal 12px Arial, Helvetica, sans-serif;
+    color: #6b6b6b;
+    text-align: center;
+    padding: 0;
+    direction: rtl;
+    background: #fff url(../images/bg.jpg) right top repeat;
+    line-height: 18px; /*Changed*/
+}
+.pageWrapper {
+    text-align: right;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+.pageLayout {
+    width: 960px;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    margin-bottom: 5px;
+    line-height: 18px;
+}
+ul,
+ol {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+ul li,
+ol li {
+    padding: 0;
+    margin: 7px 10px 7px 0;
+    line-height: 18px;
+}
+input {
+    font: normal 12px Arial, Helvetica, sans-serif;
+}
+.header {
+    width: 960px;
+    position: relative;
+    height: 122px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    float: right;
+}
+.header h1 {
+    margin: 15px 30px 0 0;
+}
+.header h1 a {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    cursor: pointer;
+    border: 0px;
+}
+.mainFlash {
+    background: #000 url(../images/bgFlash1.jpg) right top repeat; /*Changed*/
+    width: 100%;
+    height: 80px;
+    padding: 20px 0;
+    margin: 0 0 0 0;
+    float: right;
+}
+
+.mainFlash-dashboard {
+    background: #000 url(../images/bgFlash1.jpg) right top repeat; /*Changed*/
+    width: 100%;
+    height: 40px;
+    padding: 20px 0;
+    margin: 0 0 0 0;
+    float: right;
+}
+
+.menubar {
+    background: url(../images/bgmenu.jpg) right top no-repeat; /*Changed*/
+    width: 960px;
+    height: 43px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    float: right;
+}
+.mainHeader {
+    width: 960px;
+    padding: 0 0 0 0;
+    margin: 20px 0 0 0;
+    float: right;
+}
+.footer {
+    width: 900px;
+    color: #000000;
+    font: bold 10px Arial, Helvetica, sans-serif;
+    padding: 10px 30px;
+    margin: 40px 0 0 0;
+    float: right;
+}
+.footer ul {
+    list-style: none;
+    display: inline;
+    padding: 0;
+    width: 900px;
+    margin: 0;
+    float: right;
+}
+.footer ul li {
+    list-style: none;
+    display: inline;
+    padding: 0 5px;
+    margin: 0;
+    border-left: 1px solid #000;
+}
+.footer ul li a {
+    color: #000;
+}
+.footer ul li a:hover {
+    color: #02b74a;
+}
+.footer ul .noneBorder {
+    border-left: 0px solid #7f7e7e;
+}
+.footer p {
+    float: right;
+    width: 900px;
+    margin: 0 5px 0 0;
+}
+.footer table {
+    padding: 0;
+    margin: 0;
+    clear: both;
+    display: block;
+    float: right;
+}
+.footer table tr td {
+    padding: 0 5px;
+    margin: 0 0 0 0;
+}
+.footer table tr td img {
+    padding: 0;
+    margin: 0 0 0 5px;
+}
+.footer table tr td h2 {
+    font: bold 15px Arial, Helvetica, sans-serif;
+    color: #000;
+    margin: 0;
+}
+.info {
+    float: right;
+    width: 958px;
+    border: 1px solid #01a25e;
+    margin-top: 15px;
+    padding: 15px 0px 15px 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+.info h2 {
+    padding: 5px 15px 5px 15px;
+    color: #01a25e;
+}
+
+.info p {
+    padding: 5px 15px 5px 15px;
+    color: #000000;
+}
+
+.info tr td {
+    padding: 5px 15px;
+}
+.info a {
+    color: #01a25e;
+    font-size: 15px;
+    font-weight: bold;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+.det {
+    font-size: 16px;
+}

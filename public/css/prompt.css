@@ -1,0 +1,48 @@
+.input_form {
+    font-size: 13px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+}
+
+.input_form_header {
+    color: white;
+    background-color: green;
+    text-align: right;
+    height: 35px;
+}
+
+.input_form_label {
+    color: green;
+    text-align: left;
+    width: 100px;
+    background: url("../images/bg.jpg");
+}
+
+.input_form_input {
+    text-align: right;
+    width: 400px;
+    height: 35px;
+    background: url("../images/bg.jpg");
+}
+
+.input_form_input_txt {
+    text-align: right;
+    width: 90%;
+}
+
+.input_form_buttons {
+    text-align: center;
+    height: 35px;
+    background: url("../images/bg.jpg");
+}
+
+.input_form_button_cancel {
+    width: 100px;
+    text-align: center;
+}
+
+.input_form_button_ok {
+    width: 100px;
+    text-align: center;
+}
